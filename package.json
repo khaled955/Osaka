@@ -1,0 +1,24 @@
+{
+  "name": "osaka-project",
+  "version": "1.0.0",
+  "main": "index.js",
+ 
+
+"scripts": {
+  "dev": "npx tailwindcss -i ./src/css/input.css -o ./dist/css/output.css --watch",
+  "build": "npx tailwindcss -i ./src/css/input.css -o ./dist/css/output.css --minify",
+  "serve": "npx http-server -p 5500"
+},
+
+
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.4.14"
+  },
+  "dependencies": {
+    "flowbite": "^2.5.2"
+  }
+}

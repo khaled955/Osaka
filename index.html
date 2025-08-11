@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Osaka</title>
+
+ <!-- Tailwind build (you will build this locally to dist/) -->
+  <link rel="stylesheet" href="dist/css/output.css" />
+
+
+   
+  <!-- Vendor CSS via CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SOMEHASH" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+
+</head>
+<body class="font-sans overflow-auto">
+
+
+<div class="loader-box fixed inset-0 bg-green-950 z-[999999] flex justify-center items-center">
+    <span class="loader"></span>
+</div>
+
+
+
+
+
+    <!--  start Navbar -->
+      <nav class="flex bg-transparent text-white justify-between p-2 items-center z-[999] fixed w-[100%] transition-colors duration-300">
+
+        <div class="logo">
+            <h2 class="text-[35px] cursor-pointer font-black header-logo">osaka</h2>
+        </div>
+
+        <div class="nav-icons flex gap-7">
+            <ul class=" hidden absolute top-[100%] left-0  space-y-2 md:space-y-0 md:flex md:static items-center md:gap-7 nav-header-box p-3 bg-black w-full md:w-auto md:bg-transparent">
+                <li>
+                    <a  href="#home">HOME</a>
+                </li>
+                <li>
+                    <a  href="#about">ABOUT</a>
+                </li>
+                <li>
+                    <a  href="#skills">SKILLS</a>
+                </li>
+                <li>
+                    <a  href="#services">SERVICES</a>
+                </li>
+                <li>
+                    <a  href="#portifolio">PORTIFOLIO</a>
+                </li>
+                <li>
+                    <a  href="#price">PRICE</a>
+                </li>
+            
+                <li>
+                    <a  href="#testimonials">CLIENTS</a>
+                </li>
+       
+                <li>
+                    <a  href="#blog">BLOG</a>
+                </li>
+          
+                <li>
+                    <a  href="#contact">CONTACT</a>
+                </li>
+            </ul>
+            <div class="btn-link">
+                <button id="navBtn">
+                    <svg       xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 md:hidden">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                      </svg>
+                      
+                </button>
+            </div>
+        </div>
+
+
+
+      </nav>
+<!--  End Navnar -->
+
+<!--  start main section -->
+  <main id="home" class=" section h-screen flex justify-center items-center text-white bg-[url('../../src/imgs/bg.jpg')] bg-cover bg-center relative">
+    <section class="container">
+        <h1 class="text-[60px] font-black">ROBIN STEEL</h1>
+        <p class="mb-7">Developer, Graphics & Web Design</p>
+        <a class="text-red-600" href="#">VIEW PORTFOLIO </a>
+    </section>
+
+    <ul class="absolute left-10 bottom-3 flex text-2xl gap-7 flex-wrap">
+        <li class="icons">
+            <a  href="#">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+        </li>
+        <li class=" icons">
+            <a class="" href="#">
+                <i class="fa-brands fa-x"></i>
+            </a>
+        </li>
+        <li class=" icons">
+            <a class="" href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </li>
+        <li class="icons ">
+            <a class="" href="#">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </li>
+    </ul>
+
+
+
+<!--  Start animat part -->
+<div class="animat absolute bottom-3 left-[50%] -translate-x[50%] w-6 h-8 border-2 border-white rounded-full">
+    <div class="move size-2 bg-white rounded-full absolute left-[50%] -translate-x-1/2">
+
+    </div>
+  </div>
+<!--  End Animate part -->
+
+
+
+  </main>
+<!--  End main Section -->
+
+
+<!--  start side menu -->
+  <aside class="fixed top-[50%] left-0 z-[99999] -translate-y-[50%] flex items-start">
+<div class="outer-box">
+    <div class="inner-box bg-white hidden whitespace-nowrap overflow-hidden">
+    <h3 class="mb-2 font-bold text-center">Select Your Color</h3>
+    <ul class="flex gap-2 p-2">
+        <li class="size-8 cursor-pointer flex-shrink-0 bg-red-700"></li>
+        <li class="size-8 cursor-pointer flex-shrink-0 bg-yellow-500"></li>
+        <li class="size-8 cursor-pointer flex-shrink-0 bg-blue-600"></li>
+        <li class="size-8 cursor-pointer flex-shrink-0 bg-pink-900"></li>
+        <li class="size-8 cursor-pointer flex-shrink-0 bg-gray-950"></li>
+        <li class="size-8 cursor-pointer flex-shrink-0 bg-green-300"></li>
+    </ul>
+    </div>
+</div>
+
+
+<div class="gear-box p-3 text-white bg-black ">
+    <i class="fa-solid fa-gear animate-spin fa-2x cursor-pointer"></i>
+</div>
+  </aside>
+<!--  End side menu -->
+
+
+
+<!--  start about Section -->
+  <section id="about" class=" section py-[60px] bg-[url('../../src/imgs/light_dot.jpg')] about">
+    <h2 class="header-top before:content-['ABOUT'] ">ABOUT</h2>
+    <p class="text-center uppercase font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, incidunt.</p>
+   
+    <div class="max-w-screen-xl mx-auto mt-9">
+        <div class="container grid grid-cols-12 gap-7">
+
+             <div class="img col-span-12 md:col-span-4 ">
+                <img class="w-full" src="/src/imgs/me.jpg" alt="robin steel">
+             </div>
+
+           <div class="about-text p-5 col-span-12 md:col-span-8 ">
+              <h2 class="text-2xl font-extrabold mb-3">Robin Steel</h2>
+            <h3 class="font-bold text-red-600 mb-5">Creative UI/UX Designer, Developer.</h3>
+            <p class="mb-7 leading-8 font-medium"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. In corporis alias voluptates eius rerum quae exercitationem quas voluptatum amet labore itaque, totam dolore veniam nihil ut deleniti consequuntur recusandae voluptas, unde pariatur accusantium quidem iure. Dolores magni laborum hic harum omnis reprehenderit officia saepe veritatis, natus, ipsa blanditiis, delectus non? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, exercitationem eum. Ipsa aspernatur labore qui voluptatem molestiae error dicta, animi eos obcaecati lorm50
+                 voluptas natus laborum nostrum? Dolores architecto modi quia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit cumque, esse atque totam mollitia excepturi corrupti quo nulla sed aliquam repudiandae! Hic omnis dolorum vel! Distinctio, suscipit laboriosam vel eius fugiat minus, quibusdam laborum sunt, corrupti animi vitae.</p>
+            <span class="font-extrabold">Email:</span> <a class=" decoration-2  underline" href="mailto:1@gmail.com">1@gmail.com</a>
+            </a>
+           </div>
+
+
+
+        </div>
+    </div>
+  </section>
+<!--  End About Section -->
+
+
+<!--  start myskills  -->
+  <div class=" section skills py-10 bg-black" id="skills">
+    <h2 class="header-top text-white/20 before:text-white before:content-['MYSKILLS'] ">MY SKILLS</h2>
+    <p class="text-center uppercase font-semibold text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, repellendus.</p>
+
+<div class="max-w-screen-xl mx-auto py-6">
+    <div class="container py-6 text-white flex flex-wrap gap-7 justify-center font-bold text-2xl">
+
+<div class="box size-60 flex justify-center items-center flex-col gap-3 rounded-full border-[14px] border-dashed border-red-700 ">
+    <span data-number="90"> 0</span>
+    <p> HTML</p>
+</div>
+<div class="box size-60 flex justify-center items-center flex-col gap-3 rounded-full border-[14px] border-dashed border-red-700 ">
+    <span data-number="95"> 0</span>
+    <p> CSS</p>
+</div>
+<div class="box size-60 flex justify-center items-center flex-col gap-3 rounded-full border-[14px] border-dashed border-red-700">
+    <span data-number="97"> 0</span>
+    <p> SASS</p>
+</div>
+<div class="box size-60 flex justify-center items-center flex-col gap-3 rounded-full border-[14px] border-dashed border-red-700">
+    <span data-number="91"> 0</span>
+    <p> BOOtSTRAP</p>
+</div>
+<div class="box size-60 flex justify-center items-center flex-col gap-3 rounded-full border-[14px] border-dashed border-red-700">
+    <span data-number="97"> 0</span>
+    <p> TAILWIND CSS</p>
+</div>
+<div class="box size-60 flex justify-center items-center flex-col gap-3 rounded-full border-[14px] border-dashed border-red-700">
+    <span data-number="92"> 0</span>
+    <p> JQUERY</p>
+</div>
+<div class="box size-60 flex justify-center items-center flex-col gap-3 rounded-full border-[14px] border-dashed border-red-700">
+    <span data-number="91"> 0</span>
+    <p> REACT</p>
+</div>
+
+
+
+
+
+
+    </div>
+</div>
+  </div>
+<!--  End My skills -->
+  
+<section id="services" class=" section services p-9 bg-[url('../../src/imgs/dark_dot.jpg')] relative">
+    <h2 class="header-top before:content-['SERVICES'] text-white/25 before:text-white">SERVICES</h2>
+    <p class="text-center uppercase font-semibold text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, incidunt.</p>
+   
+<div class="max-w-screen-xl mx-auto mt-8 p-8">
+    <div class="container grid grid-cols-12 gap-y-12 md:gap-11">
+
+   <div class="card col-span-12 md:col-span-4 p-3 bg-gray-100 relative group/parent">
+<h2 class="mt-5 font-bold mb-3 relative w-fit mx-auto text-[30px] after:w-[50%] after:bg-red-700 after:h-[1px] after:absolute after:left-[50%] after:-translate-x-[50%] after:bottom-[10px] py-4 group-hover/parent:after:w-full after:transition-[width] after:duration-200">BRANDING</h2>
+<p class="leading-9 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, praesentium obcaecati maiores harum veritatis inventore?</p>
+<div class="services-icons absolute -top-[25px] left-[50%] -translate-x-[50%] size-[60px] border-white border-4 rounded-full bg-black text-white flex justify-center items-center">
+    <i class="fa-solid fa-anchor transition-colors duration-200 group-hover/parent:text-red-800"></i>
+</div>
+   </div>
+
+
+   <div class="card col-span-12 md:col-span-4 p-3 bg-gray-100 relative group/parent">
+<h2 class="mt-5 font-bold mb-3 relative w-fit mx-auto text-[30px] after:w-[50%] after:bg-red-700 after:h-[1px] after:absolute after:left-[50%] after:-translate-x-[50%] after:bottom-[10px] py-4 group-hover/parent:after:w-full after:transition-[width] after:duration-200">MARKETING</h2>
+<p class="leading-9 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, praesentium obcaecati maiores harum veritatis inventore?</p>
+<div class="services-icons absolute -top-[25px] left-[50%] -translate-x-[50%] size-[60px] border-white border-4 rounded-full bg-black text-white flex justify-center items-center">
+    <i class="fa-solid fa-chart-bar transition-colors duration-200 group-hover/parent:text-red-800"></i>
+</div>
+   </div>
+
+
+   
+   <div class="card col-span-12 md:col-span-4 p-3 bg-gray-100 relative group/parent">
+    <h2 class="mt-5 font-bold mb-3 relative w-fit mx-auto text-[30px] after:w-[50%] after:bg-red-700 after:h-[1px] after:absolute after:left-[50%] after:-translate-x-[50%] after:bottom-[10px] py-4 group-hover/parent:after:w-full after:transition-[width] after:duration-200">WEB DESIGN</h2>
+    <p class="leading-9 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, praesentium obcaecati maiores harum veritatis inventore?</p>
+    <div class="services-icons absolute -top-[25px] left-[50%] -translate-x-[50%] size-[60px] border-white border-4 rounded-full bg-black text-white flex justify-center items-center">
+        <i class="fa-solid fa-globe transition-colors duration-200 group-hover/parent:text-red-800"></i>
+    </div>
+       </div>
+    
+    
+
+       <div class="card col-span-12 md:col-span-4 p-3 bg-gray-100 relative group/parent">
+        <h2 class="mt-5 font-bold mb-3 relative w-fit mx-auto text-[30px] after:w-[50%] after:bg-red-700 after:h-[1px] after:absolute after:left-[50%] after:-translate-x-[50%] after:bottom-[10px] py-4 group-hover/parent:after:w-full after:transition-[width] after:duration-200">RESPONSIVE</h2>
+        <p class="leading-9 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, praesentium obcaecati maiores harum veritatis inventore?</p>
+        <div class="services-icons absolute -top-[25px] left-[50%] -translate-x-[50%] size-[60px] border-white border-4 rounded-full bg-black text-white flex justify-center items-center">
+            <i class="fa-solid fa-desktop transition-colors duration-200 group-hover/parent:text-red-800"></i>
+        </div>
+           </div>
+        
+        
+
+
+           <div class="card col-span-12 md:col-span-4 p-3 bg-gray-100 relative group/parent">
+            <h2 class="mt-5 font-bold mb-3 relative w-fit mx-auto text-[30px] after:w-[50%] after:bg-red-700 after:h-[1px] after:absolute after:left-[50%] after:-translate-x-[50%] after:bottom-[10px] py-4 group-hover/parent:after:w-full after:transition-[width] after:duration-200">DEVELOPMENT</h2>
+            <p class="leading-9 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, praesentium obcaecati maiores harum veritatis inventore?</p>
+            <div class="services-icons absolute -top-[25px] left-[50%] -translate-x-[50%] size-[60px] border-white border-4 rounded-full bg-black text-white flex justify-center items-center">
+                <i class="fa-solid fa-code transition-colors duration-200 group-hover/parent:text-red-800"></i>
+            </div>
+               </div>
+            
+            
+
+
+               <div class="card col-span-12 md:col-span-4 p-3 bg-gray-100 relative group/parent">
+                <h2 class="mt-5 font-bold mb-3 relative w-fit mx-auto text-[30px] after:w-[50%] after:bg-red-700 after:h-[1px] after:absolute after:left-[50%] after:-translate-x-[50%] after:bottom-[10px] py-4 group-hover/parent:after:w-full after:transition-[width] after:duration-200">SUPPORT</h2>
+                <p class="leading-9 text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, praesentium obcaecati maiores harum veritatis inventore?</p>
+                <div class="services-icons absolute -top-[25px] left-[50%] -translate-x-[50%] size-[60px] border-white border-4 rounded-full bg-black text-white flex justify-center items-center">
+                    <i class="fa-solid fa-life-ring transition-colors duration-200 group-hover/parent:text-red-800"></i>
+                </div>
+                   </div>
+                
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</div>
+</section>
+
+<!--  start services section -->
+
+<!--  start portifolio Section -->
+  <section id="portifolio" class=" section portifolio mt-7 p-10">
+    <h2 class="header-top text-black/20 before:text-black before:content-['PORTFOLIO'] ">PORTFOLIO</h2>
+    <p class="text-center uppercase font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, repellendus.</p>
+   <div class="btn-box my-7 flex justify-center gap-4">
+    <button class="all-btn">ALL</button>
+    <button class="dev-btn">DEV</button>
+    <button class="web-btn">WEB</button>
+    <button class="design-btn">DESIGN</button>
+   </div>
+
+<!--   All Button cards start  -->
+<div class="card-box grid grid-cols-12 gap-5 all-btn">
+
+    <div class="porto-card col-span-12 md:col-span-4 relative overflow-hidden group/parent">
+        <img class="w-full" src="src/imgs/4 (1).jpg" alt="">
+        <div class="porto-overlay w-[90%] h-[95%] absolute bg-gray-300 left-[5%] -top-[400px] cursor-pointer flex flex-col justify-center items-center gap-3 transition-[top] duration-300 group-hover/parent:top-0">
+          <h4>WEB DEVELOP</h4>
+          <p>Picture</p>
+          <ul class=" flex gap-3">
+            <li class="size-10 bg-black  text-white rounded-full flex justify-center items-center">
+                <a href="#">
+                    <i class="fa-solid fa-search-plus"></i>
+                </a>
+            </li>
+            <li class="size-10 bg-black text-white rounded-full flex justify-center items-center">
+                <a href="#">
+                    <i class="fa-solid fa-link"></i>
+                </a>
+            </li>
+          </ul>
+        </div>
+    </div>
+
+
+    <div class="porto-card col-span-12 md:col-span-4 relative overflow-hidden group/parent">
+        <img class="w-full" src="src/imgs/6 (1).jpg" alt="">
+        <div class="porto-overlay w-[90%] h-[95%] absolute bg-gray-300 left-[5%] -top-[400px] cursor-pointer flex flex-col justify-center items-center gap-3 transition-[top] duration-300 group-hover/parent:top-0">
+          <h4>WEB DEVELOP</h4>
+          <p>Picture</p>
+          <ul class=" flex gap-3">
+            <li class="size-10 bg-black  text-white rounded-full flex justify-center items-center">
+                <a href="#">
+                    <i class="fa-solid fa-search-plus"></i>
+                </a>
+            </li>
+            <li class="size-10 bg-black text-white rounded-full flex justify-center items-center">
+                <a href="#">
+                    <i class="fa-solid fa-link"></i>
+                </a>
+            </li>
+          </ul>
+        </div>
+    </div>
+
+
+    <div class="porto-card col-span-12 md:col-span-4 relative overflow-hidden group/parent">
+        <img class="w-full" src="src/imgs/1 (1).jpg" alt="">
+        <div class="porto-overlay w-[90%] h-[95%] absolute bg-gray-300 left-[5%] -top-[400px] cursor-pointer flex flex-col justify-center items-center gap-3 transition-[top] duration-300 group-hover/parent:top-0">
+          <h4>WEB DEVELOP</h4>
+          <p>Picture</p>
+          <ul class=" flex gap-3">
+            <li class="size-10 bg-black  text-white rounded-full flex justify-center items-center">
+                <a href="#">
+                    <i class="fa-solid fa-search-plus"></i>
+                </a>
+            </li>
+            <li class="size-10 bg-black text-white rounded-full flex justify-center items-center">
+                <a href="#">
+                    <i class="fa-solid fa-link"></i>
+                </a>
+            </li>
+          </ul>
+        </div>
+    </div>
+
+
+    <div class="porto-card col-span-12 md:col-span-4 relative overflow-hidden group/parent">
+        <img class="w-full" src="src/imgs/2 (1).jpg" alt="">
+        <div class="porto-overlay w-[90%] h-[95%] absolute bg-gray-300 left-[5%] -top-[400px] cursor-pointer flex flex-col justify-center items-center gap-3 transition-[top] duration-300 group-hover/parent:top-0">
+          <h4>WEB DEVELOP</h4>
+          <p>Picture</p>
+          <ul class=" flex gap-3">
+            <li class="size-10 bg-black  text-white rounded-full flex justify-center items-center">
+                <a href="#">
+                    <i class="fa-solid fa-search-plus"></i>
+                </a>
+            </li>
+            <li class="size-10 bg-black text-white rounded-full flex justify-center items-center">
+                <a href="#">
+                    <i class="fa-solid fa-link"></i>
+                </a>
+            </li>
+          </ul>
+        </div>
+    </div>
+
+
+
+
+    <div class="porto-card col-span-12 md:col-span-4 relative overflow-hidden group/parent">
+        <img class="w-full" src="src/imgs/3 (1).jpg" alt="">
+        <div class="porto-overlay w-[90%] h-[95%] absolute bg-gray-300 left-[5%] -top-[400px] cursor-pointer flex flex-col justify-center items-center gap-3 transition-[top] duration-300 group-hover/parent:top-0">
+          <h4>WEB DEVELOP</h4>
+          <p>Picture</p>
+          <ul class=" flex gap-3">
+            <li class="size-10 bg-black  text-white rounded-full flex justify-center items-center">
+                <a href="#">
+                    <i class="fa-solid fa-search-plus"></i>
+                </a>
+            </li>
+            <li class="size-10 bg-black text-white rounded-full flex justify-center items-center">
+                <a href="#">
+                    <i class="fa-solid fa-link"></i>
+                </a>
+            </li>
+          </ul>
+        </div>
+    </div>
+
+
+
+
+    <div class="porto-card col-span-12 md:col-span-4 relative overflow-hidden group/parent">
+        <img class="w-full" src="src/imgs/5 (1).jpg" alt="">
+        <div class="porto-overlay w-[90%] h-[95%] absolute bg-gray-300 left-[5%] -top-[400px] cursor-pointer flex flex-col justify-center items-center gap-3 transition-[top] duration-300 group-hover/parent:top-0">
+          <h4>WEB DEVELOP</h4>
+          <p>Picture</p>
+          <ul class=" flex gap-3">
+            <li class="size-10 bg-black  text-white rounded-full flex justify-center items-center">
+                <a href="#">
+                    <i class="fa-solid fa-search-plus"></i>
+                </a>
+            </li>
+            <li class="size-10 bg-black text-white rounded-full flex justify-center items-center">
+                <a href="#">
+                    <i class="fa-solid fa-link"></i>
+                </a>
+            </li>
+          </ul>
+        </div>
+    </div>
+
+<!--  all button cards end -->
+
+
+
+
+
+
+</div>
+  <!--  All button cards ends -->
+
+
+<!--  Dev button start -->
+<div class="card-box grid-cols-12 gap-5 dev-btn hidden">
+
+    <div class="porto-card col-span-12 md:col-span-4 relative overflow-hidden group/parent">
+        <img class="w-full" src="src/imgs/4 (1).jpg" alt="">
+        <div class="porto-overlay w-[90%] h-[95%] absolute bg-gray-300 left-[5%] -top-[400px] cursor-pointer flex flex-col justify-center items-center gap-3 transition-[top] duration-300 group-hover/parent:top-0">
+          <h4>WEB DEVELOP</h4>
+          <p>Picture</p>
+          <ul class=" flex gap-3">
+            <li class="size-10 bg-black  text-white rounded-full flex justify-center items-center">
+                <a href="#">
+                    <i class="fa-solid fa-search-plus"></i>
+                </a>
+            </li>
+            <li class="size-10 bg-black text-white rounded-full flex justify-center items-center">
+                <a href="#">
+                    <i class="fa-solid fa-link"></i>
+                </a>
+            </li>
+          </ul>
+        </div>
+    </div>
+</div>
+<!--  Dev button End  -->
+
+
+
+<!-- Web Button Start -->
+<div class="card-box hidden grid-cols-12 gap-5 web-btn">
+
+    <div class="porto-card col-span-12 md:col-span-4 relative overflow-hidden group/parent">
+        <img class="w-full" src="src/imgs/6 (1).jpg" alt="">
+        <div class="porto-overlay w-[90%] h-[95%] absolute bg-gray-300 left-[5%] -top-[400px] cursor-pointer flex flex-col justify-center items-center gap-3 transition-[top] duration-300 group-hover/parent:top-0">
+          <h4>WEB DEVELOP</h4>
+          <p>Picture</p>
+          <ul class=" flex gap-3">
+            <li class="size-10 bg-black  text-white rounded-full flex justify-center items-center">
+                <a href="#">
+                    <i class="fa-solid fa-search-plus"></i>
+                </a>
+            </li>
+            <li class="size-10 bg-black text-white rounded-full flex justify-center items-center">
+                <a href="#">
+                    <i class="fa-solid fa-link"></i>
+                </a>
+            </li>
+          </ul>
+        </div>
+    </div>
+
+</div>
+<!--  Web button End -->
+
+
+<!--  design button start -->
+<div class="card-box hidden grid-cols-12 gap-5 design-btn">
+
+    <div class="porto-card col-span-12 md:col-span-4 relative overflow-hidden group/parent">
+        <img class="w-full" src="src/imgs/1 (1).jpg" alt="">
+        <div class="porto-overlay w-[90%] h-[95%] absolute bg-gray-300 left-[5%] -top-[400px] cursor-pointer flex flex-col justify-center items-center gap-3 transition-[top] duration-300 group-hover/parent:top-0">
+          <h4>WEB DEVELOP</h4>
+          <p>Picture</p>
+          <ul class=" flex gap-3">
+            <li class="size-10 bg-black  text-white rounded-full flex justify-center items-center">
+                <a href="#">
+                    <i class="fa-solid fa-search-plus"></i>
+                </a>
+            </li>
+            <li class="size-10 bg-black text-white rounded-full flex justify-center items-center">
+                <a href="#">
+                    <i class="fa-solid fa-link"></i>
+                </a>
+            </li>
+          </ul>
+        </div>
+    </div>
+
+
+    <div class="porto-card col-span-12 md:col-span-4 relative overflow-hidden group/parent">
+        <img class="w-full" src="./imgs/2 (1).jpg" alt="">
+        <div class="porto-overlay w-[90%] h-[95%] absolute bg-gray-300 left-[5%] -top-[400px] cursor-pointer flex flex-col justify-center items-center gap-3 transition-[top] duration-300 group-hover/parent:top-0">
+          <h4>WEB DEVELOP</h4>
+          <p>Picture</p>
+          <ul class=" flex gap-3">
+            <li class="size-10 bg-black  text-white rounded-full flex justify-center items-center">
+                <a href="#">
+                    <i class="fa-solid fa-search-plus"></i>
+                </a>
+            </li>
+            <li class="size-10 bg-black text-white rounded-full flex justify-center items-center">
+                <a href="#">
+                    <i class="fa-solid fa-link"></i>
+                </a>
+            </li>
+          </ul>
+        </div>
+    </div>
+
+
+    <div class="porto-card col-span-12 md:col-span-4 relative overflow-hidden group/parent">
+        <img class="w-full" src="./imgs/3 (1).jpg" alt="">
+        <div class="porto-overlay w-[90%] h-[95%] absolute bg-gray-300 left-[5%] -top-[400px] cursor-pointer flex flex-col justify-center items-center gap-3 transition-[top] duration-300 group-hover/parent:top-0">
+          <h4>WEB DEVELOP</h4>
+          <p>Picture</p>
+          <ul class=" flex gap-3">
+            <li class="size-10 bg-black  text-white rounded-full flex justify-center items-center">
+                <a href="#">
+                    <i class="fa-solid fa-search-plus"></i>
+                </a>
+            </li>
+            <li class="size-10 bg-black text-white rounded-full flex justify-center items-center">
+                <a href="#">
+                    <i class="fa-solid fa-link"></i>
+                </a>
+            </li>
+          </ul>
+        </div>
+    </div>
+
+
+    <div class="porto-card col-span-12 md:col-span-4 relative overflow-hidden group/parent">
+        <img class="w-full" src="src/imgs/5 (1).jpg" alt="">
+        <div class="porto-overlay w-[90%] h-[95%] absolute bg-gray-300 left-[5%] -top-[400px] cursor-pointer flex flex-col justify-center items-center gap-3 transition-[top] duration-300 group-hover/parent:top-0">
+          <h4>WEB DEVELOP</h4>
+          <p>Picture</p>
+          <ul class=" flex gap-3">
+            <li class="size-10 bg-black  text-white rounded-full flex justify-center items-center">
+                <a href="#">
+                    <i class="fa-solid fa-search-plus"></i>
+                </a>
+            </li>
+            <li class="size-10 bg-black text-white rounded-full flex justify-center items-center">
+                <a href="#">
+                    <i class="fa-solid fa-link"></i>
+                </a>
+            </li>
+          </ul>
+        </div>
+    </div>
+
+</div>
+<!--  design button end -->
+  </section>
+<!--  End Portifolio Section -->
+
+
+<!--  start price section -->
+  <section id="price" class=" section mt-10 p-10 price">
+    <h2 class="header-top text-black/20 before:text-black before:content-['PRICE'] ">PRICE</h2>
+    <p class="text-center uppercase font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, repellendus.</p>
+    <div class="animat-box py-9 max-w-screen-xl mx-auto">
+        <div class="container py-16">
+
+
+            <div class=" relative price-box owl-carousel">
+                <div class="box-one  border-2 overflow-hidden rounded-md">
+                             <div class="price-info relative flex flex-col justify-center items-center gap-8 p-5 bg-black text-white before:content-['Popular'] before:absolute before:bg-white before:text-black before:top-[46px] before:-end-[110px] before:font-bold before:rotate-45 before:text-center before:px-10 before:w-full">
+                                 <h2 class="font-black text-3xl">BASIC</h2>
+                                 <P class="text-red-700 font-bold text-2xl"><sub class="text-white">$</sub> 15</P>
+                                
+                             </div>
+                         
+                             <div class="details text-center text-black">
+                                <ul>
+                                 <li class="p-4 text-xl border-b-2 border-gray-500 capitalize"> 3 user account</li>
+                                 <li class="p-4 text-xl border-b-2 border-gray-500 capitalize"> 20 website</li>
+                                 <li class="p-4 text-xl border-b-2 border-gray-500 capitalize">400 gb disk space</li>
+                                 <li class="p-4 text-xl border-b-2 border-gray-500 capitalize">  mon - fri support</li>
+                                </ul>
+                         
+                                <button class="py-2 px-8 rounded-lg bg-red-700 mt-6 ">Buy</button>
+                             </div>
+                         
+                           </div>
+                         
+                         
+                           <div class="box-two  border-2 overflow-hidden rounded-md">
+                             <div class="price-info relative flex flex-col justify-center items-center gap-8 p-5 bg-black text-white before:content-['Popular'] before:absolute before:bg-white before:text-black before:top-[46px] before:-end-[110px] before:font-bold before:rotate-45 before:text-center before:px-10 before:w-full">
+                                 <h2 class="font-black text-3xl">BASIC</h2>
+                                 <P class="text-red-700 font-bold text-2xl"><sub class="text-white">$</sub> 15</P>
+                                
+                             </div>
+                         
+                             <div class="details text-center text-black">
+                                <ul>
+                                 <li class="p-4 text-xl border-b-2 border-gray-500 capitalize"> 3 user account</li>
+                                 <li class="p-4 text-xl border-b-2 border-gray-500 capitalize"> 20 website</li>
+                                 <li class="p-4 text-xl border-b-2 border-gray-500 capitalize">400 gb disk space</li>
+                                 <li class="p-4 text-xl border-b-2 border-gray-500 capitalize">  mon - fri support</li>
+                                </ul>
+                         
+                                <button class="py-2 px-8 rounded-lg bg-red-700 mt-6 ">Buy</button>
+                             </div>
+                         
+                           </div>
+                         
+                          
+                         
+                           <div class="box-three  border-2 overflow-hidden rounded-md">
+                             <div class="price-info relative flex flex-col justify-center items-center gap-8 p-5 bg-black text-white before:content-['Popular'] before:absolute before:bg-white before:text-black before:top-[46px] before:-end-[110px] before:font-bold before:rotate-45 before:text-center before:px-10 before:w-full">
+                                 <h2 class="font-black text-3xl">BASIC</h2>
+                                 <P class="text-red-700 font-bold text-2xl"><sub class="text-white">$</sub> 15</P>
+                                
+                             </div>
+                         
+                             <div class="details text-center text-black">
+                                <ul>
+                                 <li class="p-4 text-xl border-b-2 border-gray-500 capitalize"> 3 user account</li>
+                                 <li class="p-4 text-xl border-b-2 border-gray-500 capitalize"> 20 website</li>
+                                 <li class="p-4 text-xl border-b-2 border-gray-500 capitalize">400 gb disk space</li>
+                                 <li class="p-4 text-xl border-b-2 border-gray-500 capitalize">  mon - fri support</li>
+                                </ul>
+                         
+                                <button class="py-2 px-8 rounded-lg bg-red-700 mt-6 ">Buy</button>
+                             </div>
+                         
+                           </div>
+                         
+                     </div>
+                    
+
+         <div class="price-info py-8 mt-10 flex justify-between items-center flex-wrap bg-[url('../../src/imgs/stat.jpg')] bg-cover bg-center relative">
+            <div class="overlay absolute left-0 top-0 inset-0 bg-black/75 backdrop-blur-[2px]">
+            </div>
+
+           <div id="priceBox" class="box flex flex-col gap-8 justify-center items-center basis-[100%] md:basis-1/4 py-5 text-white text-3xl relative">
+            <i class="fa-solid fa-thumbs-up"></i>
+            <span data-info="999" class="text-yellow-600 counter">0</span>
+            <span>Likes</span>
+           </div>
+
+
+           <div class="box flex flex-col gap-8 justify-center items-center basis-[100%] md:basis-1/4 py-5 text-white text-3xl relative">
+            <i class="fa-solid fa-users"></i>
+            <span data-info="865" class="text-yellow-600 counter">0</span>
+            <span>Client</span>
+           </div>
+
+
+
+           <div class="box flex flex-col gap-8 justify-center items-center basis-[100%] md:basis-1/4 py-5 text-white text-3xl relative">
+
+            <i class="fa-solid fa-file"></i>
+            <span data-info="144" class="text-yellow-600 counter">0</span>
+            <span>Projects</span>
+           </div>
+
+
+
+
+           <div class="box flex flex-col gap-8 justify-center items-center basis-[100%] md:basis-1/4 py-5 text-white text-3xl relative">
+            <i class="fa-solid fa-award"></i>
+            <span data-info="8" class="text-yellow-600 counter">0</span>
+            <span>Awards</span>
+           </div>
+
+
+
+
+
+
+         
+         </div>
+        </div>
+    </div>
+  </section>
+<!--  End price Section -->
+
+<!--  start Testimonial Section -->
+  <section id="testimonials" class=" section testimonial py-8 mt-10">
+    <h2 class="header-top text-black/20 before:text-black before:content-['TESTIMONIALS'] ">TESTIMONIALS</h2>
+    <p class="text-center uppercase font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, repellendus.</p>
+ 
+    <div class="max-w-screen-xl mx-auto  mt-7 py-10">
+      <div class="container testo-box owl-carousel">
+
+<div class="card p-4 border-2 border-gray-500 rounded-md relative shadow-lg text-black">
+    <div class="img absolute left-[50%] -translate-x-[50%] -top-[30px] z-[9999]">
+        <img class="size-[60px] rounded-full shadow-lg" src="src/imgs/1-5.jpg" alt="">
+    </div>
+    <h2 class="mt-6 text-center font-bold">RICHARD</h2>
+    <p class="text-center mb-3 w-fit mx-auto relative before:absolute before:left-[50%] before:w-[50%] before:h-[3px] before:bg-red-800 before:-bottom-3 before:-translate-x-[50%]">Web Designer</p>
+    <p class="mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores dolor, ipsam harum necessitatibus molestiae eius vero soluta totam ad nobis quis neque rem provident dolorem! Laboriosam modi cupiditate, dicta est, porro quos culpa voluptatem numquam in perspiciatis saepe voluptas, suscipit ex vitae ad animi sequi molestiae. Distinctio voluptatibus iure, culpa illo, dolorem ut a, cupiditate quaerat neque expedita repellendus sit.</p>
+</div>
+
+
+<div class="card p-4 text-black border-2 border-gray-500 rounded-md relative shadow-lg">
+    <div class="img absolute left-[50%] -translate-x-[50%] -top-[30px]">
+        <img class="size-[60px] rounded-full shadow-lg" src="src/imgs/1-4.jpg" alt="">
+    </div>
+    <h2 class="mt-6 text-center font-bold">OLIVIA</h2>
+    <p class="text-center mb-3 w-fit mx-auto relative before:absolute before:left-[50%] before:w-[50%] before:h-[3px] before:bg-red-800 before:-bottom-3 before:-translate-x-[50%]">Web Designer</p>
+    <p class="mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores dolor, ipsam harum necessitatibus molestiae eius vero soluta totam ad nobis quis neque rem provident dolorem! Laboriosam modi cupiditate, dicta est, porro quos culpa voluptatem numquam in perspiciatis saepe voluptas, suscipit ex vitae ad animi sequi molestiae. Distinctio voluptatibus iure, culpa illo, dolorem ut a, cupiditate quaerat neque expedita repellendus sit.</p>
+</div>
+
+
+
+<div class="card p-4 text-black border-2 border-gray-500 rounded-md relative shadow-lg">
+    <div class="img absolute left-[50%] -translate-x-[50%] -top-[30px]">
+        <img class="size-[60px] rounded-full shadow-lg" src="src/imgs/1-1.jpg" alt="">
+    </div>
+    <h2 class="mt-6 text-center font-bold">Nealon Olivia</h2>
+    <p class="text-center mb-3 w-fit mx-auto relative before:absolute before:left-[50%] before:w-[50%] before:h-[3px] before:bg-red-800 before:-bottom-3 before:-translate-x-[50%]">Web Designer</p>
+    <p class="mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores dolor, ipsam harum necessitatibus molestiae eius vero soluta totam ad nobis quis neque rem provident dolorem! Laboriosam modi cupiditate, dicta est, porro quos culpa voluptatem numquam in perspiciatis saepe voluptas, suscipit ex vitae ad animi sequi molestiae. Distinctio voluptatibus iure, culpa illo, dolorem ut a, cupiditate quaerat neque expedita repellendus sit.</p>
+</div>
+
+
+<div class="card p-4 border-2 text-black border-gray-500 rounded-md relative shadow-lg">
+    <div class="img absolute left-[50%] -translate-x-[50%] -top-[30px]">
+        <img class="size-[60px] rounded-full shadow-lg" src="src/imgs/1-3.jpg" alt="">
+    </div>
+    <h2 class="mt-6 text-center font-bold">ADRIANO</h2>
+    <p class="text-center mb-3 w-fit mx-auto relative before:absolute before:left-[50%] before:w-[50%] before:h-[3px] before:bg-red-800 before:-bottom-3 before:-translate-x-[50%]">GRAPHICAL Designer</p>
+    <p class="mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores dolor, ipsam harum necessitatibus molestiae eius vero soluta totam ad nobis quis neque rem provident dolorem! Laboriosam modi cupiditate, dicta est, porro quos culpa voluptatem numquam in perspiciatis saepe voluptas, suscipit ex vitae ad animi sequi molestiae. Distinctio voluptatibus iure, culpa illo, dolorem ut a, cupiditate quaerat neque expedita repellendus sit.</p>
+</div>
+
+
+
+
+
+
+    </div>
+    </div>
+  </section>
+<!--  End Testimonial Section -->
+
+<!--  start blog section -->
+  <section id="blog" class=" section blog mt-10 py-10">
+    <h2 class="header-top text-black/20 before:text-black before:content-['BLOGS'] ">BLOGS</h2>
+    <p class="text-center uppercase font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, repellendus.</p>
+ 
+<div class="max-w-screen-xl mx-auto">
+    <div class="container py-10 grid grid-cols-12 gap-5">
+
+<div class="blog-box col-span-12 md:col-span-4 rounded-md overflow-hidden border-2 border-gray-600">
+    <div class="img">
+        <img class="w-full" src="/src/imgs/cycle.jpg" alt="">
+    </div>
+    <div class="blog-text px-5 relative">
+        <div class="blog-icon p-[10px] bg-black text-white absolute -top-[30px] right-[10px] hover:text-red-600 rounded-full cursor-pointer">
+            <i class="fa-solid fa-book-open transition-colors duration-300"></i>
+        </div>
+        <h3 class="my-3 font-bold capitalize text-xl">coffe break</h3>
+        <div class="bog-cal mb-3 flex gap-5">
+          <p>
+            <i class="fa-solid fa-calendar-days"></i>
+            <span class="text-gray-600">14 May 2018</span>
+          </p>
+
+          <p>
+            <i class="fa-solid fa-user"></i>
+            <span class="text-green-600">Robin</span>
+        </p>
+        </div>
+        <p class="text-gray-950 line-clamp-3"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi temporibus, in minus non praesentium, eaque quis tempore ab voluptatum iusto beatae adipisci dignissimos? Fugit iste, dolor voluptatum exercitationem repellat harum, odio suscipit consectetur excepturi doloribus cupiditate accusamus rerum porro perspiciatis repellendus sunt voluptatem enim. Nesciunt consequatur saepe facere dolores consectetur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio repudiandae minima, cumque ea aspernatur accusamus voluptatibus quis at dignissimos quae!</p>
+
+    </div>
+</div>
+
+
+<div class="blog-box col-span-12 md:col-span-4 rounded-md overflow-hidden border-2 border-gray-600">
+    <div class="img">
+        <img class="w-full" src="/src/imgs/2(2).jpg" alt="">
+    </div>
+    <div class="blog-text px-5 relative">
+        <div class="blog-icon p-[10px] bg-black text-white absolute -top-[30px] right-[10px] hover:text-red-600 rounded-full cursor-pointer">
+            <i class="fa-solid fa-book-open transition-colors duration-300"></i>
+        </div>
+        <h3 class="my-3 font-bold capitalize text-xl">coffe break</h3>
+        <div class="bog-cal mb-3 flex gap-5">
+          <p>
+            <i class="fa-solid fa-calendar-days"></i>
+            <span class="text-gray-600">14 May 2018</span>
+          </p>
+
+          <p>
+            <i class="fa-solid fa-user"></i>
+            <span class="text-green-600">Robin</span>
+        </p>
+        </div>
+        <p class="text-gray-950 line-clamp-3"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi temporibus, in minus non praesentium, eaque quis tempore ab voluptatum iusto beatae adipisci dignissimos? Fugit iste, dolor voluptatum exercitationem repellat harum, odio suscipit consectetur excepturi doloribus cupiditate accusamus rerum porro perspiciatis repellendus sunt voluptatem enim. Nesciunt consequatur saepe facere dolores consectetur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio repudiandae minima, cumque ea aspernatur accusamus voluptatibus quis at dignissimos quae!</p>
+
+    </div>
+</div>
+
+
+
+<div class="blog-box col-span-12 md:col-span-4 rounded-md overflow-hidden border-2 border-gray-600">
+    <div class="img">
+        <img class="w-full" src="src/imgs/3(2).jpg" alt="">
+    </div>
+    <div class="blog-text px-5 relative">
+        <div class="blog-icon p-[10px] bg-black text-white absolute -top-[30px] right-[10px] hover:text-red-600 rounded-full cursor-pointer">
+            <i class="fa-solid fa-book-open transition-colors duration-300"></i>
+        </div>
+        <h3 class="my-3 font-bold capitalize text-xl">coffe break</h3>
+        <div class="bog-cal mb-3 flex gap-5">
+          <p>
+            <i class="fa-solid fa-calendar-days"></i>
+            <span class="text-gray-600">14 May 2018</span>
+          </p>
+
+          <p>
+            <i class="fa-solid fa-user"></i>
+            <span class="text-green-600">Robin</span>
+        </p>
+        </div>
+        <p class="text-gray-950 line-clamp-3"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi temporibus, in minus non praesentium, eaque quis tempore ab voluptatum iusto beatae adipisci dignissimos? Fugit iste, dolor voluptatum exercitationem repellat harum, odio suscipit consectetur excepturi doloribus cupiditate accusamus rerum porro perspiciatis repellendus sunt voluptatem enim. Nesciunt consequatur saepe facere dolores consectetur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio repudiandae minima, cumque ea aspernatur accusamus voluptatibus quis at dignissimos quae!</p>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+    </div>
+</div>
+  </section>
+<!--  End blog Section -->
+
+<!--  start contact section -->
+  <section id="contact" class=" section contact mt-14 py-10 bg-black">
+    <h2 class="header-top text-white/20 before:text-white before:content-['GET_IN_TOUCH'] ">GET IN TOUCH</h2>
+    <p class="text-center uppercase font-semibold text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, repellendus.</p>
+   <div class="max-w-screen-xl mx-auto">
+    <div class="container flex flex-wrap items-center gap-4 ">
+    <form class="mt-8 basis-[100%] md:basis-[50%] form-field">
+
+        <div>
+            <input type="text" class="w-full outline-none border-b-2 border-red-700 p-3 focus:border-white mb-3 bg-transparent text-white" placeholder="Name*" name="user-name" autocomplete="off">
+    
+            <input type="email" class="w-full outline-none border-b-2 border-red-700 p-3 focus:border-white mb-3 bg-transparent text-white" placeholder="Email*" name="user-email" autocomplete="off">
+    
+    <textarea class="w-full outline-none border-b-2 border-red-700 p-3 focus:border-white mb-3 bg-transparent text-white resize-none min-h-5" placeholder="Message*" name="user-Message" id="textArea" autocomplete="off"></textarea>
+    
+    <button type="submit" class="bg-white px-6 py-2 rounded-md hover:bg-red-800 transition-colors duration-300"> SEND Message</button>
+         </div>
+
+
+    </form>
+
+    <div class="contact-info mt-8 basis-[100%] md:basis-[30%] ms-auto">
+        <h2 class="text-red-600">Phone</h2>
+        <span class="text-white mb-6 inline-block">034645562653</span>
+        <h2 class="text-red-600">LOCATION</h2>
+        <span class="text-white mb-6 inline-block">BENI SUEF</span>
+        <h2 class="text-red-600">EMAIL</h2>
+        <span class="text-white">drkhaled306@gmail.com</span>
+    </div>
+
+
+    </div>
+   </div>
+  </section>
+<!--  End contact section -->
+
+<script src="src/js/jquery-3.7.1.min.js"></script>
+<script src="src/js/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
