@@ -8,7 +8,7 @@
   }
 
   .header-top {
-    @apply text-center text-black/20 mt-10 text-[100px] font-black relative  before:absolute before:left-[50%] before:text-black before:-translate-x-[50%] before:text-[50px] before:top-[50%] before:-translate-y-[50%] before:tracking-wider;
+    @apply text-center text-black/20 mt-10 text-[50px] md:text-[100px] font-black relative  before:absolute before:left-[50%] before:text-black before:-translate-x-[50%] before:text-[50px] before:top-[50%] before:-translate-y-[50%] before:tracking-wider;
   }
 
   .active {
@@ -88,3 +88,8 @@ body {
   background-color: rgba(255, 0, 0, 0.1); /* light red background */
   transition: background-color 0.5s ease;
 }
+
+
+
+
+
